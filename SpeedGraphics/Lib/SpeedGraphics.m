@@ -398,4 +398,193 @@
 
 
 
+#pragma mark - Using Transparency Layers  -
+/** @name Using Transparency Layers  **/
+
+-(void)beginTransparencyLayer:(CFDictionaryRef)info{
+    CGContextBeginTransparencyLayer(self.context, info);
+}
+
+-(void)beginTransparencyLayerWithRect:(CGRect)rect info:(CFDictionaryRef)info{
+    CGContextBeginTransparencyLayerWithRect(self.context, rect, info);
+}
+
+-(void)endTransparencyLayer{
+    CGContextEndTransparencyLayer(self.context);
+}
+
+
+
+
+#pragma mark - Drawing an Image to a Graphics Context  -
+/** @name Drawing an Image to a Graphics Context  **/
+
+-(void)drawTiledImage:(CGImageRef)image rect:(CGRect)rect{
+    CGContextDrawTiledImage(self.context, rect, image);
+}
+
+-(void)drawImage:(CGImageRef)image rect:(CGRect)rect{
+    CGContextDrawImage(self.context, rect, image);
+}
+
+
+
+
+#pragma mark - Drawing PDF Content to a Graphics Context  -
+/** @name Drawing PDF Content to a Graphics Context  **/
+
+-(void)drawPDFPage:(CGPDFPageRef)page{
+    CGContextDrawPDFPage(self.context, page);
+}
+
+
+
+
+#pragma mark - Drawing With a Gradient  -
+/** @name Drawing With a Gradient  **/
+
+-(void)drawLinearGradient:(CGGradientRef)gradient startPoint:(CGPoint)sp endPoint:(CGPoint)ep options:(CGGradientDrawingOptions)options{
+    CGContextDrawLinearGradient(self.context, gradient, sp, ep, options);
+}
+
+
+-(void)drawRadialGradient:(CGGradientRef)gradient startCenter:(CGPoint)sc startRadius:(CGFloat)sr endCenter:(CGPoint)ec endRadius:(CGFloat)er options:(CGGradientDrawingOptions)options{
+    CGContextDrawRadialGradient(self.context, gradient, sc, sr, ec, er, options);
+}
+
+
+
+
+#pragma mark - Drawing With a Shading  -
+/*** Drawing With a Shading **/
+
+-(void)drawShading:(CGShadingRef)shading{
+    CGContextDrawShading(self.context, shading);
+}
+
+
+
+
+#pragma mark - Setting Up a Page-Based Graphics Context  -
+/*** Setting Up a Page-Based Graphics Context  **/
+
+
+-(void)beginPage:(CGRect*)mediaBox{
+    CGContextBeginPage(self.context, mediaBox);
+}
+
+
+-(void)endPage{
+    CGContextEndPage(self.context);
+}
+
+
+
+
+#pragma mark - Drawing Glyphs  -
+/*** Drawing Glyphs  **/
+
+-(void)showGlyphs:(CGGlyph*)g count:(size_t)count{
+    CGContextShowGlyphs(self.context, g, count);
+}
+
+-(void)showGlyphs:(CGGlyph*)g atPoint:(CGPoint)point count:(size_t)count{
+    CGContextShowGlyphsAtPoint(self.context, point.x, point.y, g, count);
+}
+
+-(void)showGlyphs:(CGGlyph*)g atPositions:(CGPoint*)positions count:(size_t)count{
+    CGContextShowGlyphsAtPositions(self.context, g, positions, count);
+}
+
+-(void)showGlyphs:(CGGlyph*)g withAdvances:(CGSize*)advances count:(size_t)count{
+    CGContextShowGlyphsWithAdvances(self.context, g, advances, count);
+}
+
+
+
+
+#pragma mark - Drawing Text  -
+/*** Drawing Text  **/
+
+
+-(CGAffineTransform)getTextMatrix{
+    return CGContextGetTextMatrix(self.context);
+}
+
+-(CGPoint)getTextPosition{
+    return CGContextGetTextPosition(self.context);
+}
+
+-(void)selectFont:(char*)name size:(CGFloat)size textEncoding:(CGTextEncoding)encoding{
+    CGContextSelectFont(self.context, name, size, encoding);
+}
+
+-(void)setCharacterSpacing:(CGFloat)spacing{
+    CGContextSetCharacterSpacing(self.context, spacing);
+}
+
+-(void)setFont:(CGFontRef)font{
+    CGContextSetFont(self.context, font);
+}
+
+-(void)setFontSize:(CGFloat)size{
+    CGContextSetFontSize(self.context, size);
+}
+
+-(void)setTextDrawingMode:(CGTextDrawingMode)mode{
+    CGContextSetTextDrawingMode(self.context, mode);
+}
+
+-(void)setTextMatrix:(CGAffineTransform)t{
+    CGContextSetTextMatrix(self.context, t);
+}
+
+-(void)setTextPosition:(CGPoint)point{
+    CGContextSetTextPosition(self.context, point.x, point.y);
+}
+
+-(void)showText:(char*)string length:(size_t)length{
+    CGContextShowText(self.context, string, length);
+}
+
+-(void)showText:(char*)string length:(size_t)length atPoint:(CGPoint)point{
+    CGContextShowTextAtPoint(self.context, point.x, point.y, string, length);
+}
+
+
+
+
+#pragma mark - Converting Between Device Space and User Space  -
+/*** Converting Between Device Space and User Space  **/
+
+-(CGAffineTransform) getUserSpaceToDeviceSpaceTransform{
+    return CGContextGetUserSpaceToDeviceSpaceTransform(self.context);
+}
+
+-(CGPoint) convertPointToDeviceSpace:(CGPoint)point{
+    return CGContextConvertPointToDeviceSpace(self.context, point);
+}
+
+-(CGPoint) convertPointToUserSpace:(CGPoint)point{
+    return CGContextConvertPointToUserSpace(self.context, point);
+}
+
+-(CGSize) convertSizeToDeviceSpace:(CGSize)size{
+    return CGContextConvertSizeToDeviceSpace(self.context, size);
+}
+
+-(CGSize) convertSizeToUserSpace:(CGSize)size{
+    return CGContextConvertSizeToUserSpace(self.context, size);
+}
+
+-(CGRect) convertRectToDeviceSpace:(CGRect)rect{
+    return CGContextConvertRectToDeviceSpace(self.context, rect);
+}
+
+-(CGRect) convertRectToUserSpace:(CGRect)rect{
+    return CGContextConvertRectToUserSpace(self.context, rect);
+}
+
+
+
 @end

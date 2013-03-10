@@ -155,7 +155,7 @@
 
 
 #pragma mark - Constructing Path -
-/** @name Constructing Path   **/
+/*** Constructing Path   **/
 
 /**
  @desc:Adds an arc of a circle to the current path, possibly preceded by a straight line segment
@@ -521,7 +521,7 @@ SGColorShadowMake(CGSize offset, CGFloat blur, CGColorRef color)
 
 
 #pragma mark - Transforming User Space  -
-/** @name Transforming User Space  **/
+/*** Transforming User Space  **/
 
 /**
  @desc: Transforms the user coordinate system in a context using a specified matrix
@@ -549,5 +549,216 @@ SGColorShadowMake(CGSize offset, CGFloat blur, CGColorRef color)
 -(void)translateCTMx:(CGFloat)tx y:(CGFloat)ty;
 
 
+
+
+#pragma mark - Using Transparency Layers  -
+/*** Using Transparency Layers  **/
+
+/**
+ @desc: Begins a transparency layer
+ **/
+-(void)beginTransparencyLayer:(CFDictionaryRef)info;
+
+/**
+ @desc: Begins a transparency layer whose contents are bounded by the specified rectangle
+ **/
+-(void)beginTransparencyLayerWithRect:(CGRect)rect info:(CFDictionaryRef)info;
+
+/**
+ @desc: Ends a transparency layer
+ **/
+-(void)endTransparencyLayer;
+
+
+
+
+#pragma mark - Drawing an Image to a Graphics Context  -
+/*** Drawing an Image to a Graphics Context  **/
+
+/**
+ @desc: Repeatedly draws an image, scaled to the provided rectangle, to fill the current clip region
+ **/
+-(void)drawTiledImage:(CGImageRef)image rect:(CGRect)rect;
+
+/**
+ @desc: Draws an image into a graphics context
+ **/
+-(void)drawImage:(CGImageRef)image rect:(CGRect)rect;
+
+
+
+
+#pragma mark - Drawing PDF Content to a Graphics Context  -
+/*** Drawing PDF Content to a Graphics Context  **/
+
+-(void)drawPDFPage:(CGPDFPageRef)page;
+
+
+
+
+#pragma mark - Drawing With a Gradient  -
+/*** Drawing With a Gradient  **/
+
+/**
+  @desc: Paints a gradient fill that varies along the line defined by the provided starting and ending points
+  **/
+-(void)drawLinearGradient:(CGGradientRef)gradient startPoint:(CGPoint)sp endPoint:(CGPoint)ep options:(CGGradientDrawingOptions)options;
+
+/**
+ @desc: Paints a gradient fill that varies along the area defined by the provided starting and ending circles
+ **/
+-(void)drawRadialGradient:(CGGradientRef)gradient startCenter:(CGPoint)sc startRadius:(CGFloat)sr endCenter:(CGPoint)ec endRadius:(CGFloat)er options:(CGGradientDrawingOptions)options;
+
+
+
+
+#pragma mark - Drawing With a Shading  -
+/*** Drawing With a Shading **/
+
+-(void)drawShading:(CGShadingRef)shading;
+
+
+
+
+#pragma mark - Setting Up a Page-Based Graphics Context  -
+/*** Setting Up a Page-Based Graphics Context  **/
+
+/**
+ @desc: Starts a new page in a page-based graphics context
+ **/
+-(void)beginPage:(CGRect*)mediaBox;
+
+/**
+ @desc: Ends the current page in a page-based graphics context
+ **/
+-(void)endPage;
+
+
+
+
+#pragma mark - Drawing Glyphs  -
+/*** Drawing Glyphs  **/
+
+/**
+ @desc: Displays an array of glyphs at the current text position
+ **/
+-(void)showGlyphs:(CGGlyph*)g count:(size_t)count;
+
+/**
+ @desc:Displays an array of glyphs at a position you specify
+ **/
+-(void)showGlyphs:(CGGlyph*)g atPoint:(CGPoint)point count:(size_t)count;
+
+/**
+ @desc: Draws glyphs at the provided position
+ **/
+-(void)showGlyphs:(CGGlyph*)g atPositions:(CGPoint*)positions count:(size_t)count;
+
+/**
+ @desc: Draws an array of glyphs with varying offsets
+ **/
+-(void)showGlyphs:(CGGlyph*)g withAdvances:(CGSize*)advances count:(size_t)count;
+
+
+
+
+#pragma mark - Drawing Text  -
+/*** Drawing Text  **/
+
+/**
+ @desc: Returns the current text matrix
+ **/
+-(CGAffineTransform)getTextMatrix;
+
+/**
+ @desc: Returns the location at which text is drawn
+ **/
+-(CGPoint)getTextPosition;
+
+/**
+ @desc: Sets the font and font size in a graphics context
+ **/
+-(void)selectFont:(char*)name size:(CGFloat)size textEncoding:(CGTextEncoding)encoding;
+
+/**
+ @desc: Sets the current character spacing
+ **/
+-(void)setCharacterSpacing:(CGFloat)spacing;
+
+/**
+ @desc: Sets the platform font in a graphics context
+ **/
+-(void)setFont:(CGFontRef)font;
+
+/**
+ @desc: Sets the current font size
+ **/
+-(void)setFontSize:(CGFloat)size;
+
+/**
+ @desc: Sets the current text drawing mode
+ **/
+-(void)setTextDrawingMode:(CGTextDrawingMode)mode;
+
+/**
+ @desc: Sets the current text matrix
+ **/
+-(void)setTextMatrix:(CGAffineTransform)t;
+
+/**
+  @desc: Sets the location at which text is drawn
+  **/
+-(void)setTextPosition:(CGPoint)point;
+
+/**
+ @desc: Displays a character array at the current text position, a point specified by the current text matrix
+ **/
+-(void)showText:(char*)string length:(size_t)length;
+
+/**
+ @desc: Displays a character string at a position you specify
+ **/
+-(void)showText:(char*)string length:(size_t)length atPoint:(CGPoint)point;
+
+
+
+
+#pragma mark - Converting Between Device Space and User Space  -
+/*** Converting Between Device Space and User Space  **/
+
+/**
+ @desc: Returns an affine transform that maps user space coordinates to device space coordinates
+ **/
+-(CGAffineTransform) getUserSpaceToDeviceSpaceTransform;
+
+/**
+ @desc: Returns a point that is transformed from user space coordinates to device space coordinates
+ **/
+-(CGPoint) convertPointToDeviceSpace:(CGPoint)point;
+
+/**
+ @desc: Returns a point that is transformed from device space coordinates to user space coordinates
+ **/
+-(CGPoint) convertPointToUserSpace:(CGPoint)point;
+
+/**
+ @desc: Returns a size that is transformed from user space coordinates to device space coordinates
+ **/
+-(CGSize) convertSizeToDeviceSpace:(CGSize)size;
+
+/**
+ @desc: Returns a size that is transformed from device space coordinates to user space coordinates
+ **/
+-(CGSize) convertSizeToUserSpace:(CGSize)size;
+
+/**
+ @desc: Returns a rectangle that is transformed from user space coordinate to device space coordinates
+ **/
+-(CGRect) convertRectToDeviceSpace:(CGRect)rect;
+
+/**
+ @desc: Returns a rectangle that is transformed from device space coordinate to user space coordinates
+ **/
+-(CGRect) convertRectToUserSpace:(CGRect)rect;
 
 @end
