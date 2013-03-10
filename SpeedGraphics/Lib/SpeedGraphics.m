@@ -80,6 +80,10 @@
     CGContextSetLineJoin(self.context, lineJoin);
 }
 
+-(void) setLineDash:(SGLineDash)lineDash{
+    CGContextSetLineDash(self.context, lineDash.phase, lineDash.lenghts, lineDash.count);
+}
+
 -(void) setInterpolationQuality:(CGInterpolationQuality)interpolationQuality{
     CGContextSetInterpolationQuality(self.context, interpolationQuality);
 }
@@ -90,6 +94,14 @@
 
 -(void) setMiterLimit:(CGFloat)miterLimit{
     CGContextSetMiterLimit(self.context, miterLimit);
+}
+
+-(void) setFillPattern:(SGPattern)fillPattern{
+    CGContextSetFillPattern(self.context, fillPattern.pattern, fillPattern.components);
+}
+
+-(void) setStrokePattern:(SGPattern)strokePattern{
+    CGContextSetStrokePattern(self.context, strokePattern.pattern, strokePattern.components);
 }
 
 -(void) setPatternPhase:(CGSize)patternPhase{

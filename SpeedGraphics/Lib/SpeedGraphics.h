@@ -89,7 +89,26 @@
  **/
 @property (nonatomic, assign) CGFloat lineJoin;
 
-//@todo: setLineDash
+
+/**
+ @desc: Define a LineDash structure
+ **/
+typedef struct {
+    CGFloat phase;
+    CGFloat* lenghts;
+    size_t count;
+}SGLineDash;
+
+static inline SGLineDash
+SGLineDashMake(CGFloat phase, CGFloat* lenghts, size_t count)
+{
+    SGLineDash l; l.phase = phase; l.lenghts = lenghts; l.count = count;  return l;
+}
+
+/**
+ @desc: the pattern for dashed lines in a graphics context
+ **/
+@property (nonatomic, assign) SGLineDash lineDash;
 
 /**
  @desc: The miter limit for the joins of connected lines in a graphics context
@@ -101,7 +120,32 @@
  **/
 @property (nonatomic, assign) CGSize patternPhase;
 
-//@todo: setFillPattern
+
+/**
+ @desc: Define a strokePatter structure
+ **/
+typedef struct {
+    CGPatternRef pattern;
+    CGFloat* components;
+}SGPattern;
+
+static inline SGPattern
+SGPatternMake(CGPatternRef pattern, CGFloat* components)
+{
+    SGPattern p; p.pattern = pattern; p.components = components;  return p;
+}
+
+/**
+ @desc: the fill pattern in the specified graphics context
+ **/
+@property (nonatomic, assign) SGPattern fillPattern;
+
+/**
+ @desc: the stroke pattern in the specified graphics context
+ **/
+@property (nonatomic, assign) SGPattern strokePattern;
+
+
 //@todo: setRenderingIntent
 
 /**
