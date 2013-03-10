@@ -7,6 +7,7 @@
 //
 
 #import "iOSTestView.h"
+#import "SpeedGraphics.h"
 
 @implementation iOSTestView
 
@@ -19,13 +20,17 @@
     return self;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
+
 - (void)drawRect:(CGRect)rect
 {
-    // Drawing code
+    SpeedGraphics *SG = [SpeedGraphics sharedSpeedGraphics];
+    [SG useCurrentContext];
+    
+    [SG beginPathAtPoint:CGPointMake(10, 10)];
+    [SG addLineFromPoint:CGPointMake(200, 30) toPoint:CGPointMake(10, 50)];
+    
+    [SG strokePathWithColor:[UIColor redColor]];
 }
-*/
+
 
 @end
