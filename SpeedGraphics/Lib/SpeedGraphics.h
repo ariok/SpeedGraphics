@@ -153,7 +153,6 @@ SGPatternMake(CGPatternRef pattern, CGFloat* components)
  **/
 @property (nonatomic, assign) BOOL shouldAntialias;
 
-//@todo: setStrokePattern
 
 /**
  @desc: Sets how Quartz composites sample values for a graphics context
@@ -447,8 +446,6 @@ SGCMYKColorMake(CGFloat c, CGFloat m, CGFloat y, CGFloat k, CGFloat alpha)
  @desc: Sets the current fill color
  **/
 @property (nonatomic, assign) CGFloat* fillColor;
-
-//@todo: CGContextSetCMYKStrokeColor
 
 /**
  @desc: Sets the fill color space in a graphics context
