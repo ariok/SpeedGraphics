@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SpeedGraphicsTypes.h"
 
 @interface SpeedGraphics : NSObject
 
@@ -89,22 +90,6 @@
  **/
 @property (nonatomic, assign) CGFloat lineJoin;
 
-
-/**
- @desc: Define a LineDash structure
- **/
-typedef struct {
-    CGFloat phase;
-    CGFloat* lenghts;
-    size_t count;
-}SGLineDash;
-
-static inline SGLineDash
-SGLineDashMake(CGFloat phase, CGFloat* lenghts, size_t count)
-{
-    SGLineDash l; l.phase = phase; l.lenghts = lenghts; l.count = count;  return l;
-}
-
 /**
  @desc: the pattern for dashed lines in a graphics context
  **/
@@ -120,21 +105,6 @@ SGLineDashMake(CGFloat phase, CGFloat* lenghts, size_t count)
  **/
 @property (nonatomic, assign) CGSize patternPhase;
 
-
-/**
- @desc: Define a strokePatter structure
- **/
-typedef struct {
-    CGPatternRef pattern;
-    CGFloat* components;
-}SGPattern;
-
-static inline SGPattern
-SGPatternMake(CGPatternRef pattern, CGFloat* components)
-{
-    SGPattern p; p.pattern = pattern; p.components = components;  return p;
-}
-
 /**
  @desc: the fill pattern in the specified graphics context
  **/
@@ -144,7 +114,6 @@ SGPatternMake(CGPatternRef pattern, CGFloat* components)
  @desc: the stroke pattern in the specified graphics context
  **/
 @property (nonatomic, assign) SGPattern strokePattern;
-
 
 //@todo: setRenderingIntent
 
@@ -416,23 +385,6 @@ SGPatternMake(CGPatternRef pattern, CGFloat* components)
 @property (nonatomic, assign) CGFloat alpha;
 
 /**
- @desc: Define a color in the DeviceGray color space
- **/
-typedef struct {
-    CGFloat c;
-    CGFloat m;
-    CGFloat y;
-    CGFloat k;
-    CGFloat a;
-}SGCMYKColor;
-
-static inline SGCMYKColor
-SGCMYKColorMake(CGFloat c, CGFloat m, CGFloat y, CGFloat k, CGFloat alpha)
-{
-    SGCMYKColor g; g.c = c; g.m = m; g.y = y; g.k = k; g.a = alpha; return g;
-}
-
-/**
  @desc: Sets the current fill color in the DeviceCMYK color space
  **/
 @property (nonatomic, assign) SGCMYKColor CMYKFillColor;
@@ -458,20 +410,6 @@ SGCMYKColorMake(CGFloat c, CGFloat m, CGFloat y, CGFloat k, CGFloat alpha)
 @property (nonatomic, assign) CGColorRef fillColorWithColor;
 
 /**
- @desc: Define a color in the DeviceGray color space
- **/
-typedef struct {
-    CGFloat gray;
-    CGFloat alpha;
-}SGGrayColor;
-
-static inline SGGrayColor
-SGGrayColorMake(CGFloat gray, CGFloat alpha)
-{
-    SGGrayColor g; g.gray = gray; g.alpha = alpha; return g;
-}
-
-/**
  @desc: Sets the current fill color to a value in the DeviceGray color space
  **/
 @property (nonatomic, assign) SGGrayColor grayFillColor;
@@ -480,23 +418,6 @@ SGGrayColorMake(CGFloat gray, CGFloat alpha)
  @desc: Sets the current stroke color to a value in the DeviceGray color space
  **/
 @property (nonatomic, assign) SGGrayColor grayStrokeColor;
-
-/**
- @desc: Define a RGB color in the DeviceGray color space
- **/
-typedef struct {
-    CGFloat r;
-    CGFloat g;
-    CGFloat b;
-    CGFloat a;
-    
-}SGRGBColor;
-
-static inline SGRGBColor
-SGRGBColorMake(CGFloat r, CGFloat g, CGFloat b, CGFloat a)
-{
-    SGRGBColor c; c.r = r; c.g = g; c.b = b; c.a = a; return c;
-}
 
 /**
  @desc:Sets the current fill color to a value in the DeviceRGB color space
@@ -508,35 +429,10 @@ SGRGBColorMake(CGFloat r, CGFloat g, CGFloat b, CGFloat a)
  **/
 @property (nonatomic, assign) SGRGBColor RGBStrokeColor;
 
-typedef struct {
-    CGSize offset;
-    CGFloat blur;
-    
-}SGBlackShadow;
-
-static inline SGBlackShadow
-SGBlackShadowMake(CGSize offset, CGFloat blur)
-{
-    SGBlackShadow s; s.offset = offset; s.blur = blur; return s;
-}
-
 /**
  @desc: Enables shadowing in a graphics context (using a standard black shadow)
  **/
 @property (nonatomic, assign) SGBlackShadow shadow;
-
-typedef struct {
-    CGSize offset;
-    CGFloat blur;
-    CGColorRef color;
-    
-}SGColorShadow;
-
-static inline SGColorShadow
-SGColorShadowMake(CGSize offset, CGFloat blur, CGColorRef color)
-{
-    SGColorShadow s; s.offset = offset; s.blur = blur; s.color = color;  return s;
-}
 
 /**
  @desc:Enables shadowing with color a graphics context.

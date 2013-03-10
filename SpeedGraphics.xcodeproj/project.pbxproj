@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A5B2857216ECC1730009E031 /* SpeedGraphicsTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpeedGraphicsTypes.h; path = Lib/SpeedGraphicsTypes.h; sourceTree = "<group>"; };
 		A5E6D4EA16EB6753007F1F8C /* SpeedGraphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedGraphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E6D4ED16EB6753007F1F8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A5E6D4EF16EB6753007F1F8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -121,6 +122,7 @@
 			children = (
 				A5E6D51316EB67F4007F1F8C /* SpeedGraphics.h */,
 				A5E6D51416EB67F4007F1F8C /* SpeedGraphics.m */,
+				A5B2857216ECC1730009E031 /* SpeedGraphicsTypes.h */,
 			);
 			name = Lib;
 			sourceTree = "<group>";
