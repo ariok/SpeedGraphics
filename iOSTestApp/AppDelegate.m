@@ -1,8 +1,8 @@
 //
 //  AppDelegate.m
-//  SpeedGraphics
+//  iOSTestApp
 //
-//  Created by Yari Dareglia on 3/9/13.
+//  Created by Yari Dareglia on 3/10/13.
 //  Copyright (c) 2013 Yari Dareglia. All rights reserved.
 //
 
