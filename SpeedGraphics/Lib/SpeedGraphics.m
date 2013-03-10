@@ -303,6 +303,9 @@
     return CGContextGetClipBoundingBox(self.context);
 }
 
+
+
+
 #pragma mark - Setting Color, Color Space and shadow  -
 /*** Setting Color, Color Space and shadow  ***/
 
@@ -365,5 +368,34 @@
 -(void) setStrokeColorWithColor:(CGColorRef)strokeColorWithColor{
     CGContextSetStrokeColorWithColor(self.context, strokeColorWithColor);
 }
+
+
+
+
+#pragma mark - Transforming User Space  -
+/** @name Transforming User Space  **/
+
+-(void)concatCTM:(CGAffineTransform)transform{
+    CGContextConcatCTM(self.context, transform);
+}
+
+-(void)getCTM{
+    CGContextGetCTM(self.context);
+}
+
+-(void)rotateCTM:(CGFloat)angle{
+    CGContextRotateCTM(self.context, angle);
+}
+
+-(void)scaleCTMx:(CGFloat)sx y:(CGFloat)sy{
+    CGContextScaleCTM(self.context, sx, sy);
+}
+
+-(void)translateCTMx:(CGFloat)tx y:(CGFloat)ty{
+    CGContextTranslateCTM(self.context, tx, ty);
+}
+
+
+
 
 @end

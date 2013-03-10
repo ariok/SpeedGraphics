@@ -517,4 +517,37 @@ SGColorShadowMake(CGSize offset, CGFloat blur, CGColorRef color)
  **/
 @property (nonatomic, assign) CGColorRef strokeColorWithColor;
 
+
+
+
+#pragma mark - Transforming User Space  -
+/** @name Transforming User Space  **/
+
+/**
+ @desc: Transforms the user coordinate system in a context using a specified matrix
+ **/
+-(void)concatCTM:(CGAffineTransform)transform;
+
+/**
+ @desc: Returns the current transformation matrix
+ **/
+-(void)getCTM;
+
+/**
+ @desc: Rotates the user coordinate system in a context
+ **/
+-(void)rotateCTM:(CGFloat)angle;
+
+/**
+ @desc: Changes the scale of the user coordinate system in a context
+ **/
+-(void)scaleCTMx:(CGFloat)sx y:(CGFloat)sy;
+
+/**
+  @desc: Changes the origin of the user coordinate system in a context
+ **/
+-(void)translateCTMx:(CGFloat)tx y:(CGFloat)ty;
+
+
+
 @end
