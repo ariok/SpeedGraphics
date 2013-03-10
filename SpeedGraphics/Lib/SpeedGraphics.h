@@ -6,6 +6,9 @@
 //  Copyright (c) 2013 Yari Dareglia. All rights reserved.
 //
 
+#ifndef SPEEDGRAPHICS
+#define SPEEDGRAPHICS 
+
 #import <Foundation/Foundation.h>
 #import "SpeedGraphicsTypes.h"
 
@@ -699,3 +702,8 @@
 -(CGRect) convertRectToUserSpace:(CGRect)rect;
 
 @end
+
+#endif
+
+#import "SpeedGraphics+DrawingHelper.h"
+#import "SpeedGraphics+PathHelpers.h"

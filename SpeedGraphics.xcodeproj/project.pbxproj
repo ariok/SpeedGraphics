@@ -7,63 +7,179 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5E6D4EE16EB6753007F1F8C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E6D4ED16EB6753007F1F8C /* UIKit.framework */; };
-		A5E6D4F016EB6753007F1F8C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E6D4EF16EB6753007F1F8C /* Foundation.framework */; };
-		A5E6D4F216EB6753007F1F8C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E6D4F116EB6753007F1F8C /* CoreGraphics.framework */; };
-		A5E6D4F816EB6753007F1F8C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5E6D4F616EB6753007F1F8C /* InfoPlist.strings */; };
-		A5E6D4FA16EB6753007F1F8C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E6D4F916EB6753007F1F8C /* main.m */; };
-		A5E6D4FE16EB6753007F1F8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E6D4FD16EB6753007F1F8C /* AppDelegate.m */; };
-		A5E6D50016EB6753007F1F8C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E6D4FF16EB6753007F1F8C /* Default.png */; };
-		A5E6D50216EB6753007F1F8C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E6D50116EB6753007F1F8C /* Default@2x.png */; };
-		A5E6D50416EB6753007F1F8C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5E6D50316EB6753007F1F8C /* Default-568h@2x.png */; };
-		A5E6D50716EB6753007F1F8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E6D50616EB6753007F1F8C /* ViewController.m */; };
-		A5E6D50A16EB6753007F1F8C /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5E6D50816EB6753007F1F8C /* ViewController.xib */; };
-		A5E6D51516EB67F4007F1F8C /* SpeedGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E6D51416EB67F4007F1F8C /* SpeedGraphics.m */; };
-		A5E6D51C16EB7346007F1F8C /* TestingView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E6D51B16EB7346007F1F8C /* TestingView.m */; };
+		A5B285A616ECCCAA0009E031 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5B285A416ECCCAA0009E031 /* InfoPlist.strings */; };
+		A5B285A816ECCCAA0009E031 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B285A716ECCCAA0009E031 /* main.m */; };
+		A5B285AC16ECCCAA0009E031 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A5B285AA16ECCCAA0009E031 /* Credits.rtf */; };
+		A5B285AF16ECCCAA0009E031 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B285AE16ECCCAA0009E031 /* AppDelegate.m */; };
+		A5B285B216ECCCAA0009E031 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B285B016ECCCAA0009E031 /* MainMenu.xib */; };
+		A5B285BB16ECCDAC0009E031 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E6D4ED16EB6753007F1F8C /* UIKit.framework */; };
+		A5B285BC16ECCDAC0009E031 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E6D4EF16EB6753007F1F8C /* Foundation.framework */; };
+		A5B285BD16ECCDAC0009E031 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5E6D4F116EB6753007F1F8C /* CoreGraphics.framework */; };
+		A5B285C316ECCDAC0009E031 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A5B285C116ECCDAC0009E031 /* InfoPlist.strings */; };
+		A5B285C516ECCDAC0009E031 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B285C416ECCDAC0009E031 /* main.m */; };
+		A5B285C916ECCDAC0009E031 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B285C816ECCDAC0009E031 /* AppDelegate.m */; };
+		A5B285CB16ECCDAC0009E031 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B285CA16ECCDAC0009E031 /* Default.png */; };
+		A5B285CD16ECCDAC0009E031 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B285CC16ECCDAC0009E031 /* Default@2x.png */; };
+		A5B285CF16ECCDAC0009E031 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A5B285CE16ECCDAC0009E031 /* Default-568h@2x.png */; };
+		A5B285D216ECCDAC0009E031 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B285D116ECCDAC0009E031 /* ViewController.m */; };
+		A5B285D516ECCDAC0009E031 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5B285D316ECCDAC0009E031 /* ViewController.xib */; };
+		A5B285DA16ECCE290009E031 /* SpeedGraphics+PathHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B2857416ECC3240009E031 /* SpeedGraphics+PathHelpers.m */; };
+		A5B285DC16ECCE290009E031 /* SpeedGraphics+DrawingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B2857816ECC55C0009E031 /* SpeedGraphics+DrawingHelper.m */; };
+		A5B285DE16ECCE290009E031 /* SpeedGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E6D51416EB67F4007F1F8C /* SpeedGraphics.m */; };
+		A5B285E016ECCE4C0009E031 /* SpeedGraphics+PathHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B2857416ECC3240009E031 /* SpeedGraphics+PathHelpers.m */; };
+		A5B285E116ECCE4C0009E031 /* SpeedGraphics+DrawingHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B2857816ECC55C0009E031 /* SpeedGraphics+DrawingHelper.m */; };
+		A5B285E216ECCE4C0009E031 /* SpeedGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = A5E6D51416EB67F4007F1F8C /* SpeedGraphics.m */; };
+		A5B285E416ECCED00009E031 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B285E316ECCED00009E031 /* QuartzCore.framework */; };
+		A5B285E616ECCEDC0009E031 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B285E516ECCEDC0009E031 /* Cocoa.framework */; };
+		A5B285E816ECD01F0009E031 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5B285E716ECD01F0009E031 /* AppKit.framework */; };
+		A5B285EB16ECE5210009E031 /* TestView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B285EA16ECE5210009E031 /* TestView.m */; };
+		A5B285F116ECEA710009E031 /* iOSTestView.m in Sources */ = {isa = PBXBuildFile; fileRef = A5B285F016ECEA710009E031 /* iOSTestView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A5B2857216ECC1730009E031 /* SpeedGraphicsTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SpeedGraphicsTypes.h; path = Lib/SpeedGraphicsTypes.h; sourceTree = "<group>"; };
-		A5E6D4EA16EB6753007F1F8C /* SpeedGraphics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedGraphics.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B2857316ECC3240009E031 /* SpeedGraphics+PathHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SpeedGraphics+PathHelpers.h"; path = "Lib/Categories/SpeedGraphics+PathHelpers.h"; sourceTree = "<group>"; };
+		A5B2857416ECC3240009E031 /* SpeedGraphics+PathHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SpeedGraphics+PathHelpers.m"; path = "Lib/Categories/SpeedGraphics+PathHelpers.m"; sourceTree = "<group>"; };
+		A5B2857716ECC55C0009E031 /* SpeedGraphics+DrawingHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "SpeedGraphics+DrawingHelper.h"; path = "Lib/Categories/SpeedGraphics+DrawingHelper.h"; sourceTree = "<group>"; };
+		A5B2857816ECC55C0009E031 /* SpeedGraphics+DrawingHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "SpeedGraphics+DrawingHelper.m"; path = "Lib/Categories/SpeedGraphics+DrawingHelper.m"; sourceTree = "<group>"; };
+		A5B2859E16ECCCAA0009E031 /* OSXTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OSXTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B285A316ECCCAA0009E031 /* OSXTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OSXTestApp-Info.plist"; sourceTree = "<group>"; };
+		A5B285A516ECCCAA0009E031 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5B285A716ECCCAA0009E031 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5B285A916ECCCAA0009E031 /* OSXTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OSXTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		A5B285AB16ECCCAA0009E031 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A5B285AD16ECCCAA0009E031 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A5B285AE16ECCCAA0009E031 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A5B285B116ECCCAA0009E031 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A5B285BA16ECCDAC0009E031 /* iOSTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5B285C016ECCDAC0009E031 /* iOSTestApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iOSTestApp-Info.plist"; sourceTree = "<group>"; };
+		A5B285C216ECCDAC0009E031 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A5B285C416ECCDAC0009E031 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A5B285C616ECCDAC0009E031 /* iOSTestApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iOSTestApp-Prefix.pch"; sourceTree = "<group>"; };
+		A5B285C716ECCDAC0009E031 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A5B285C816ECCDAC0009E031 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A5B285CA16ECCDAC0009E031 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A5B285CC16ECCDAC0009E031 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A5B285CE16ECCDAC0009E031 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A5B285D016ECCDAC0009E031 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A5B285D116ECCDAC0009E031 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A5B285D416ECCDAC0009E031 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		A5B285E316ECCED00009E031 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A5B285E516ECCEDC0009E031 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		A5B285E716ECD01F0009E031 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		A5B285E916ECE5210009E031 /* TestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestView.h; sourceTree = "<group>"; };
+		A5B285EA16ECE5210009E031 /* TestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestView.m; sourceTree = "<group>"; };
+		A5B285EF16ECEA710009E031 /* iOSTestView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSTestView.h; sourceTree = "<group>"; };
+		A5B285F016ECEA710009E031 /* iOSTestView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iOSTestView.m; sourceTree = "<group>"; };
 		A5E6D4ED16EB6753007F1F8C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A5E6D4EF16EB6753007F1F8C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		A5E6D4F116EB6753007F1F8C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A5E6D4F516EB6753007F1F8C /* SpeedGraphics-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeedGraphics-Info.plist"; sourceTree = "<group>"; };
-		A5E6D4F716EB6753007F1F8C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		A5E6D4F916EB6753007F1F8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A5E6D4FB16EB6753007F1F8C /* SpeedGraphics-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeedGraphics-Prefix.pch"; sourceTree = "<group>"; };
-		A5E6D4FC16EB6753007F1F8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A5E6D4FD16EB6753007F1F8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A5E6D4FF16EB6753007F1F8C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
-		A5E6D50116EB6753007F1F8C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
-		A5E6D50316EB6753007F1F8C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		A5E6D50516EB6753007F1F8C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		A5E6D50616EB6753007F1F8C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A5E6D50916EB6753007F1F8C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		A5E6D51316EB67F4007F1F8C /* SpeedGraphics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SpeedGraphics.h; path = Lib/SpeedGraphics.h; sourceTree = "<group>"; };
 		A5E6D51416EB67F4007F1F8C /* SpeedGraphics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SpeedGraphics.m; path = Lib/SpeedGraphics.m; sourceTree = "<group>"; };
-		A5E6D51A16EB7346007F1F8C /* TestingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestingView.h; sourceTree = "<group>"; };
-		A5E6D51B16EB7346007F1F8C /* TestingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestingView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A5E6D4E716EB6753007F1F8C /* Frameworks */ = {
+		A5B2859B16ECCCAA0009E031 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5E6D4EE16EB6753007F1F8C /* UIKit.framework in Frameworks */,
-				A5E6D4F016EB6753007F1F8C /* Foundation.framework in Frameworks */,
-				A5E6D4F216EB6753007F1F8C /* CoreGraphics.framework in Frameworks */,
+				A5B285E816ECD01F0009E031 /* AppKit.framework in Frameworks */,
+				A5B285E616ECCEDC0009E031 /* Cocoa.framework in Frameworks */,
+				A5B285E416ECCED00009E031 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5B285B716ECCDAC0009E031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B285BB16ECCDAC0009E031 /* UIKit.framework in Frameworks */,
+				A5B285BC16ECCDAC0009E031 /* Foundation.framework in Frameworks */,
+				A5B285BD16ECCDAC0009E031 /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A5B2857616ECC3290009E031 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A5B2857316ECC3240009E031 /* SpeedGraphics+PathHelpers.h */,
+				A5B2857416ECC3240009E031 /* SpeedGraphics+PathHelpers.m */,
+				A5B2857716ECC55C0009E031 /* SpeedGraphics+DrawingHelper.h */,
+				A5B2857816ECC55C0009E031 /* SpeedGraphics+DrawingHelper.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		A5B2858116ECCC030009E031 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A5B285A116ECCCAA0009E031 /* OSXTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				A5B285AD16ECCCAA0009E031 /* AppDelegate.h */,
+				A5B285AE16ECCCAA0009E031 /* AppDelegate.m */,
+				A5B285B016ECCCAA0009E031 /* MainMenu.xib */,
+				A5B285A216ECCCAA0009E031 /* Supporting Files */,
+				A5B285E916ECE5210009E031 /* TestView.h */,
+				A5B285EA16ECE5210009E031 /* TestView.m */,
+			);
+			path = OSXTestApp;
+			sourceTree = "<group>";
+		};
+		A5B285A216ECCCAA0009E031 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5B285A316ECCCAA0009E031 /* OSXTestApp-Info.plist */,
+				A5B285A416ECCCAA0009E031 /* InfoPlist.strings */,
+				A5B285A716ECCCAA0009E031 /* main.m */,
+				A5B285A916ECCCAA0009E031 /* OSXTestApp-Prefix.pch */,
+				A5B285AA16ECCCAA0009E031 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A5B285BE16ECCDAC0009E031 /* iOSTestApp */ = {
+			isa = PBXGroup;
+			children = (
+				A5B285C716ECCDAC0009E031 /* AppDelegate.h */,
+				A5B285C816ECCDAC0009E031 /* AppDelegate.m */,
+				A5B285D016ECCDAC0009E031 /* ViewController.h */,
+				A5B285D116ECCDAC0009E031 /* ViewController.m */,
+				A5B285D316ECCDAC0009E031 /* ViewController.xib */,
+				A5B285BF16ECCDAC0009E031 /* Supporting Files */,
+				A5B285EF16ECEA710009E031 /* iOSTestView.h */,
+				A5B285F016ECEA710009E031 /* iOSTestView.m */,
+			);
+			path = iOSTestApp;
+			sourceTree = "<group>";
+		};
+		A5B285BF16ECCDAC0009E031 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A5B285C016ECCDAC0009E031 /* iOSTestApp-Info.plist */,
+				A5B285C116ECCDAC0009E031 /* InfoPlist.strings */,
+				A5B285C416ECCDAC0009E031 /* main.m */,
+				A5B285C616ECCDAC0009E031 /* iOSTestApp-Prefix.pch */,
+				A5B285CA16ECCDAC0009E031 /* Default.png */,
+				A5B285CC16ECCDAC0009E031 /* Default@2x.png */,
+				A5B285CE16ECCDAC0009E031 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		A5E6D4E116EB6753007F1F8C = {
 			isa = PBXGroup;
 			children = (
-				A5E6D4F316EB6753007F1F8C /* SpeedGraphics */,
+				A5E6D51616EB67FA007F1F8C /* Lib */,
+				A5B285A116ECCCAA0009E031 /* OSXTestApp */,
+				A5B285BE16ECCDAC0009E031 /* iOSTestApp */,
 				A5E6D4EC16EB6753007F1F8C /* Frameworks */,
 				A5E6D4EB16EB6753007F1F8C /* Products */,
 			);
@@ -72,7 +188,8 @@
 		A5E6D4EB16EB6753007F1F8C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5E6D4EA16EB6753007F1F8C /* SpeedGraphics.app */,
+				A5B2859E16ECCCAA0009E031 /* OSXTestApp.app */,
+				A5B285BA16ECCDAC0009E031 /* iOSTestApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,71 +197,64 @@
 		A5E6D4EC16EB6753007F1F8C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A5B285E716ECD01F0009E031 /* AppKit.framework */,
+				A5B285E516ECCEDC0009E031 /* Cocoa.framework */,
+				A5B285E316ECCED00009E031 /* QuartzCore.framework */,
 				A5E6D4ED16EB6753007F1F8C /* UIKit.framework */,
 				A5E6D4EF16EB6753007F1F8C /* Foundation.framework */,
 				A5E6D4F116EB6753007F1F8C /* CoreGraphics.framework */,
+				A5B2858116ECCC030009E031 /* Other Frameworks */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		A5E6D4F316EB6753007F1F8C /* SpeedGraphics */ = {
-			isa = PBXGroup;
-			children = (
-				A5E6D51A16EB7346007F1F8C /* TestingView.h */,
-				A5E6D51B16EB7346007F1F8C /* TestingView.m */,
-				A5E6D51616EB67FA007F1F8C /* Lib */,
-				A5E6D4FC16EB6753007F1F8C /* AppDelegate.h */,
-				A5E6D4FD16EB6753007F1F8C /* AppDelegate.m */,
-				A5E6D50516EB6753007F1F8C /* ViewController.h */,
-				A5E6D50616EB6753007F1F8C /* ViewController.m */,
-				A5E6D50816EB6753007F1F8C /* ViewController.xib */,
-				A5E6D4F416EB6753007F1F8C /* Supporting Files */,
-			);
-			path = SpeedGraphics;
-			sourceTree = "<group>";
-		};
-		A5E6D4F416EB6753007F1F8C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				A5E6D4F516EB6753007F1F8C /* SpeedGraphics-Info.plist */,
-				A5E6D4F616EB6753007F1F8C /* InfoPlist.strings */,
-				A5E6D4F916EB6753007F1F8C /* main.m */,
-				A5E6D4FB16EB6753007F1F8C /* SpeedGraphics-Prefix.pch */,
-				A5E6D4FF16EB6753007F1F8C /* Default.png */,
-				A5E6D50116EB6753007F1F8C /* Default@2x.png */,
-				A5E6D50316EB6753007F1F8C /* Default-568h@2x.png */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		A5E6D51616EB67FA007F1F8C /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				A5B2857616ECC3290009E031 /* Categories */,
 				A5E6D51316EB67F4007F1F8C /* SpeedGraphics.h */,
 				A5E6D51416EB67F4007F1F8C /* SpeedGraphics.m */,
 				A5B2857216ECC1730009E031 /* SpeedGraphicsTypes.h */,
 			);
 			name = Lib;
+			path = SpeedGraphics;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5E6D4E916EB6753007F1F8C /* SpeedGraphics */ = {
+		A5B2859D16ECCCAA0009E031 /* OSXTestApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5E6D50D16EB6753007F1F8C /* Build configuration list for PBXNativeTarget "SpeedGraphics" */;
+			buildConfigurationList = A5B285B316ECCCAA0009E031 /* Build configuration list for PBXNativeTarget "OSXTestApp" */;
 			buildPhases = (
-				A5E6D4E616EB6753007F1F8C /* Sources */,
-				A5E6D4E716EB6753007F1F8C /* Frameworks */,
-				A5E6D4E816EB6753007F1F8C /* Resources */,
+				A5B2859A16ECCCAA0009E031 /* Sources */,
+				A5B2859B16ECCCAA0009E031 /* Frameworks */,
+				A5B2859C16ECCCAA0009E031 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SpeedGraphics;
-			productName = SpeedGraphics;
-			productReference = A5E6D4EA16EB6753007F1F8C /* SpeedGraphics.app */;
+			name = OSXTestApp;
+			productName = OSXTestApp;
+			productReference = A5B2859E16ECCCAA0009E031 /* OSXTestApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A5B285B916ECCDAC0009E031 /* iOSTestApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5B285D616ECCDAC0009E031 /* Build configuration list for PBXNativeTarget "iOSTestApp" */;
+			buildPhases = (
+				A5B285B616ECCDAC0009E031 /* Sources */,
+				A5B285B716ECCDAC0009E031 /* Frameworks */,
+				A5B285B816ECCDAC0009E031 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iOSTestApp;
+			productName = iOSTestApp;
+			productReference = A5B285BA16ECCDAC0009E031 /* iOSTestApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -168,54 +278,104 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5E6D4E916EB6753007F1F8C /* SpeedGraphics */,
+				A5B2859D16ECCCAA0009E031 /* OSXTestApp */,
+				A5B285B916ECCDAC0009E031 /* iOSTestApp */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A5E6D4E816EB6753007F1F8C /* Resources */ = {
+		A5B2859C16ECCCAA0009E031 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5E6D4F816EB6753007F1F8C /* InfoPlist.strings in Resources */,
-				A5E6D50016EB6753007F1F8C /* Default.png in Resources */,
-				A5E6D50216EB6753007F1F8C /* Default@2x.png in Resources */,
-				A5E6D50416EB6753007F1F8C /* Default-568h@2x.png in Resources */,
-				A5E6D50A16EB6753007F1F8C /* ViewController.xib in Resources */,
+				A5B285A616ECCCAA0009E031 /* InfoPlist.strings in Resources */,
+				A5B285AC16ECCCAA0009E031 /* Credits.rtf in Resources */,
+				A5B285B216ECCCAA0009E031 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5B285B816ECCDAC0009E031 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B285C316ECCDAC0009E031 /* InfoPlist.strings in Resources */,
+				A5B285CB16ECCDAC0009E031 /* Default.png in Resources */,
+				A5B285CD16ECCDAC0009E031 /* Default@2x.png in Resources */,
+				A5B285CF16ECCDAC0009E031 /* Default-568h@2x.png in Resources */,
+				A5B285D516ECCDAC0009E031 /* ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A5E6D4E616EB6753007F1F8C /* Sources */ = {
+		A5B2859A16ECCCAA0009E031 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5E6D4FA16EB6753007F1F8C /* main.m in Sources */,
-				A5E6D4FE16EB6753007F1F8C /* AppDelegate.m in Sources */,
-				A5E6D50716EB6753007F1F8C /* ViewController.m in Sources */,
-				A5E6D51516EB67F4007F1F8C /* SpeedGraphics.m in Sources */,
-				A5E6D51C16EB7346007F1F8C /* TestingView.m in Sources */,
+				A5B285E016ECCE4C0009E031 /* SpeedGraphics+PathHelpers.m in Sources */,
+				A5B285E116ECCE4C0009E031 /* SpeedGraphics+DrawingHelper.m in Sources */,
+				A5B285E216ECCE4C0009E031 /* SpeedGraphics.m in Sources */,
+				A5B285A816ECCCAA0009E031 /* main.m in Sources */,
+				A5B285AF16ECCCAA0009E031 /* AppDelegate.m in Sources */,
+				A5B285EB16ECE5210009E031 /* TestView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5B285B616ECCDAC0009E031 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5B285DA16ECCE290009E031 /* SpeedGraphics+PathHelpers.m in Sources */,
+				A5B285DC16ECCE290009E031 /* SpeedGraphics+DrawingHelper.m in Sources */,
+				A5B285DE16ECCE290009E031 /* SpeedGraphics.m in Sources */,
+				A5B285C516ECCDAC0009E031 /* main.m in Sources */,
+				A5B285C916ECCDAC0009E031 /* AppDelegate.m in Sources */,
+				A5B285D216ECCDAC0009E031 /* ViewController.m in Sources */,
+				A5B285F116ECEA710009E031 /* iOSTestView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A5E6D4F616EB6753007F1F8C /* InfoPlist.strings */ = {
+		A5B285A416ECCCAA0009E031 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5E6D4F716EB6753007F1F8C /* en */,
+				A5B285A516ECCCAA0009E031 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		A5E6D50816EB6753007F1F8C /* ViewController.xib */ = {
+		A5B285AA16ECCCAA0009E031 /* Credits.rtf */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A5E6D50916EB6753007F1F8C /* en */,
+				A5B285AB16ECCCAA0009E031 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A5B285B016ECCCAA0009E031 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5B285B116ECCCAA0009E031 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A5B285C116ECCDAC0009E031 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5B285C216ECCDAC0009E031 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A5B285D316ECCDAC0009E031 /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5B285D416ECCDAC0009E031 /* en */,
 			);
 			name = ViewController.xib;
 			sourceTree = "<group>";
@@ -223,6 +383,73 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		A5B285B416ECCCAA0009E031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSXTestApp/OSXTestApp-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "OSXTestApp/OSXTestApp-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5B285B516ECCCAA0009E031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OSXTestApp/OSXTestApp-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "OSXTestApp/OSXTestApp-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A5B285D716ECCDAC0009E031 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSTestApp/iOSTestApp-Prefix.pch";
+				INFOPLIST_FILE = "iOSTestApp/iOSTestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A5B285D816ECCDAC0009E031 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iOSTestApp/iOSTestApp-Prefix.pch";
+				INFOPLIST_FILE = "iOSTestApp/iOSTestApp-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 		A5E6D50B16EB6753007F1F8C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -279,45 +506,30 @@
 			};
 			name = Release;
 		};
-		A5E6D50E16EB6753007F1F8C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpeedGraphics/SpeedGraphics-Prefix.pch";
-				INFOPLIST_FILE = "SpeedGraphics/SpeedGraphics-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		A5E6D50F16EB6753007F1F8C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "SpeedGraphics/SpeedGraphics-Prefix.pch";
-				INFOPLIST_FILE = "SpeedGraphics/SpeedGraphics-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		A5B285B316ECCCAA0009E031 /* Build configuration list for PBXNativeTarget "OSXTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5B285B416ECCCAA0009E031 /* Debug */,
+				A5B285B516ECCCAA0009E031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		A5B285D616ECCDAC0009E031 /* Build configuration list for PBXNativeTarget "iOSTestApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5B285D716ECCDAC0009E031 /* Debug */,
+				A5B285D816ECCDAC0009E031 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		A5E6D4E516EB6753007F1F8C /* Build configuration list for PBXProject "SpeedGraphics" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5E6D50B16EB6753007F1F8C /* Debug */,
 				A5E6D50C16EB6753007F1F8C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A5E6D50D16EB6753007F1F8C /* Build configuration list for PBXNativeTarget "SpeedGraphics" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A5E6D50E16EB6753007F1F8C /* Debug */,
-				A5E6D50F16EB6753007F1F8C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

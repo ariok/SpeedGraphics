@@ -4,14 +4,36 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>SpeedGraphics.xcscheme</key>
+		<key>OSXTestApp.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<true/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>iOSTestApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>A5B2857D16ECCC030009E031</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5B2859D16ECCCAA0009E031</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5B285B916ECCDAC0009E031</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>A5E6D4E916EB6753007F1F8C</key>
 		<dict>
 			<key>primary</key>

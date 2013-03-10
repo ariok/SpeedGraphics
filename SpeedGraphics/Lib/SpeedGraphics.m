@@ -34,8 +34,13 @@
 /*** Graphics Context  ***/
 
 -(void) useCurrentContext{
-//OSXdiff
-    self.context = UIGraphicsGetCurrentContext();    
+    
+#if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
+    self.context = UIGraphicsGetCurrentContext();
+    
+#elif TARGET_OS_MAC
+    self.context = [[NSGraphicsContext currentContext]graphicsPort];
+#endif
 }
 
 -(void) contextFlush{
