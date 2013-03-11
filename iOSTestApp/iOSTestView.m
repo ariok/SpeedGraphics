@@ -26,10 +26,11 @@
     SpeedGraphics *SG = [SpeedGraphics sharedSpeedGraphics];
     [SG useCurrentContext];
     
-    [SG beginPathAtPoint:CGPointMake(10, 10)];
-    [SG addLineFromPoint:CGPointMake(200, 30) toPoint:CGPointMake(10, 50)];
+    [SG addCircleAPoint:CGPointMake(50, 50) radius:50];
+
+    [SG addRect:CGRectMake(10, 10, 200, 200) roundedCorner:20];
     
-    [SG strokePathWithColor:[UIColor redColor]];
+    [SG fill:[UIColor redColor] andStroke:[UIColor whiteColor]];
 }
 
 

@@ -33,6 +33,15 @@
  **/
 -(void) beginPathAtPoint:(CGPoint)point;
 
+#if (TARGET_OS_IPHONE || TARGET_IPHONE_SIMULATOR)
+-(void) fill:(UIColor*)fillColor andStroke:(UIColor*)strokeColor;
+
+#elif TARGET_OS_MAC
+-(void) fill:(NSColor*)fillColor andStroke:(NSColor*)strokeColor;
+#endif
+
+
+
 
 
 
@@ -45,12 +54,35 @@
 -(void) addLineFromPoint:(CGPoint)point toPoint:(CGPoint)point;
 
 /**
- @desc: Create an horizontal line
+ @desc: Create an horizontal line. Returns the point where line ends
  **/
--(void) addLineFromPoint:(CGPoint)point withLength:(int)length;
+-(CGPoint) addLineFromPoint:(CGPoint)point withLength:(int)length;
 
 /**
- @desc: Create a vertical line
+ @desc: Create a vertical line.  Returns the point where line ends
  **/
--(void) addLineFromPoint:(CGPoint)point withHeight:(int)height;
+-(CGPoint) addLineFromPoint:(CGPoint)point withHeight:(int)height;
+
+
+
+
+
+#pragma mark - Shapes -
+/*** Shapes  **/
+
+/**
+ @desc: Create a square path specifyng the center point and side size
+ **/
+-(void) addSquareAtPoint:(CGPoint)point size:(int)size;
+
+/**
+ @desc: Create a circle path with center point and radius
+ **/
+-(void) addCircleAPoint:(CGPoint)point radius:(int)radius;
+
+/**
+ @desc: Create a rect with rounded corners
+ **/
+-(void) addRect:(CGRect)rect roundedCorner:(int)round;
+
 @end

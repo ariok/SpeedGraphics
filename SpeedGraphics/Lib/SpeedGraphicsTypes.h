@@ -36,6 +36,7 @@ SGLineDashMake(CGFloat phase, CGFloat* lenghts, size_t count)
     SGLineDash l; l.phase = phase; l.lenghts = lenghts; l.count = count;  return l;
 }
 
+
 /**
  @desc: Define a strokePatter structure
  **/
@@ -49,6 +50,7 @@ SGPatternMake(CGPatternRef pattern, CGFloat* components)
 {
     SGPattern p; p.pattern = pattern; p.components = components;  return p;
 }
+
 
 /**
  @desc: Define a color in the DeviceGray color space
@@ -67,6 +69,7 @@ SGCMYKColorMake(CGFloat c, CGFloat m, CGFloat y, CGFloat k, CGFloat alpha)
     SGCMYKColor g; g.c = c; g.m = m; g.y = y; g.k = k; g.a = alpha; return g;
 }
 
+
 /**
  @desc: Define a color in the DeviceGray color space
  **/
@@ -80,6 +83,7 @@ SGGrayColorMake(CGFloat gray, CGFloat alpha)
 {
     SGGrayColor g; g.gray = gray; g.alpha = alpha; return g;
 }
+
 
 /**
  @desc: Define a RGB color in the DeviceGray color space
@@ -98,6 +102,7 @@ SGRGBColorMake(CGFloat r, CGFloat g, CGFloat b, CGFloat a)
     SGRGBColor c; c.r = r; c.g = g; c.b = b; c.a = a; return c;
 }
 
+
 /**
  @desc: Define a black Shadow 
  **/
@@ -112,6 +117,7 @@ SGBlackShadowMake(CGSize offset, CGFloat blur)
 {
     SGBlackShadow s; s.offset = offset; s.blur = blur; return s;
 }
+
 
 /**
  @desc: Define a color Shadow
